@@ -22,11 +22,11 @@ class MyDocument extends Document {
             name="apple-mobile-web-app-status-bar-style"
             content="default"
           />
-          <meta name="apple-mobile-web-app-title" content="Tienda" />
-          <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+          <meta name="apple-mobile-web-app-title" content="JoeSupply" />
+          <link rel="apple-touch-icon" href="/assets/imgs/template/logo-joesupply-preview.png" />
 
           {/* Favicon fallback */}
-          <link rel="icon" href="/icons/icon-192.png" />
+          <link rel="icon" href="/assets/imgs/template/logo-joesupply-preview.png" />
         </Head>
         <body>
           <Main />
