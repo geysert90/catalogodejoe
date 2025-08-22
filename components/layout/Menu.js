@@ -8,9 +8,9 @@ export default function Menu() {
         <>
 
             <ul className="main-menu">
-                <li className="/home"><Link className="active" href="/">Home</Link></li>
+                <li className="/home"><Link className="active" href="/">Inicio</Link></li>
                 <li className="/tienda"><Link className="active" href="/tienda">Tienda</Link></li>
-                <li><Link href="/about">Acerca de</Link></li>
+                {/* <li><Link href="/about">Acerca de</Link></li> */}
                 
                 <li className="/seguirpedido"><Link href="/seguirpedido">Pedidos</Link></li>
                 <li><Link href="/contact">Contactanos</Link></li>

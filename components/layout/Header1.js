@@ -18,16 +18,16 @@ export default function Header({ topBarStyle, handleMobileMenuOpen }) {
                 <div className="box-bar bg-grey-900 ">
                     <div className="container position-relative">
                         <div className="row align-items-center">
-                            <div className="col-lg-7 col-md-8 col-sm-5 col-4"> <Link className="phone-icon mr-45" href="tel:+01-246-357">
+                            <div className="col-lg-7 col-md-8 col-sm-5 col-4"> <Link className="phone-icon mr-45" href="tel:+01-561-814-0985">
                                 <svg fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z">
                                     </path>
-                                </svg>Telefono: +01-246-357 (Disponible 24/7)</Link><Link className="email-icon" href="mailto:joesupply@gmail.com">
+                                </svg>Telefono: +1 (561) 814‑0985 (Disponible 24/7)</Link><Link className="email-icon" href="mailto:joesupply@gmail.com">
                                     <svg fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75">
                                         </path>
                                     </svg>joesupply@gmail.com</Link></div>
-                            <div className="col-lg-5 col-md-4 col-sm-7 col-8 text-end"><Link className="icon-socials icon-twitter2" href="#">
+                            {/*<div className="col-lg-5 col-md-4 col-sm-7 col-8 text-end"><Link className="icon-socials icon-twitter2" href="#">
                                 <svg className="bi bi-twitter" xmlns="http://www.w3.org/2000/svg" width={14} height={14} fill="none" viewBox="0 0 16 16">
                                     <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z">
                                     </path>
@@ -47,7 +47,7 @@ export default function Header({ topBarStyle, handleMobileMenuOpen }) {
                                     <svg xmlns="http://www.w3.org/2000/svg" width={14} height={14} viewBox="0 0 24 24">
                                         <path d="M22.987 13.966c1.357-7.765-5.416-14.412-13.052-12.979-5.821-3.561-12.503 3.226-8.935 9.029-1.387 7.747 5.384 14.48 13.083 13.01 5.832 3.536 12.493-3.26 8.904-9.06zm-10.603 5.891c-3.181 0-6.378-1.448-6.362-3.941.005-.752.564-1.442 1.309-1.442 1.873 0 1.855 2.795 4.837 2.795 2.093 0 2.807-1.146 2.807-1.944 0-2.886-9.043-1.117-9.043-6.543 0-2.938 2.402-4.962 6.179-4.741 3.602.213 5.713 1.803 5.917 3.289.101.971-.542 1.727-1.659 1.727-1.628 0-1.795-2.181-4.6-2.181-1.266 0-2.334.528-2.334 1.674 0 2.395 8.99 1.005 8.99 6.276-.001 3.039-2.423 5.031-6.041 5.031z">
                                         </path>
-                                    </svg></Link></div>
+                                    </svg></Link></div> */}
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,19 @@ export default function Header({ topBarStyle, handleMobileMenuOpen }) {
                 <div className="container">
                     <div className="main-header">
                         <div className="header-left">
-                            <div className="header-logo"><Link className="d-flex" href="/"><img alt="Ecom" src="/assets/imgs/template/logo.svg" /></Link></div>
+                            {/*<div className="header-logo"><Link className="d-flex" href="/"><img alt="Ecom" src="/assets/imgs/template/logo.svg" /></Link></div>*/}
+                            <div className="header-logo">
+                            <Link className="d-flex" href="/">
+                                <img 
+                                alt="Joe Supply" 
+                                src="/assets/imgs/template/logo-joesupply.png" 
+                                width="120"   // ancho fijo (se escala proporcionalmente)
+                                height="auto" 
+                                />
+                            </Link>
+                            </div>
+
+
                             <div className="header-nav">
                                 <nav className="nav-main-menu d-none d-xl-block">
                                     <Menu />

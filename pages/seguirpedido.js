@@ -241,63 +241,62 @@ export default function TrackParcel() {
 )}
 
 
-              <div className="mt-40 d-flex justify-content-center">
+              {/*<div className="mt-40 d-flex justify-content-center">
                 <Link className="hover-up mr-10 wow animate__animated animate__fadeIn" href="#">
                   <img src="/assets/imgs/template/appstore-btn.png" alt="transp" />
                 </Link>
                 <Link className="hover-up wow animate__animated animate__fadeIn" href="#">
                   <img src="/assets/imgs/template/google-play-btn.png" alt="transp" />
                 </Link>
-              </div>
+              </div>*/}
             </div>
           </div>
         </section>
 
-        {/* A partir de aquí dejo tu contenido tal cual lo tenías */}
         <section className="section pt-85">
           <div className="container">
             <div className="row mt-50 align-items-center">
               <div className="col-lg-6 mb-30">
-                <h6 className="color-brand-2 mb-15 wow animate__animated animate__fadeIn">International tracking for</h6>
-                <h2 className="color-brand-2 mb-25 wow animate__animated animate__fadeIn">Any post office tracking</h2>
+                <h6 className="color-brand-2 mb-15 wow animate__animated animate__fadeIn">Seguimiento internacional para</h6>
+                <h2 className="color-brand-2 mb-25 wow animate__animated animate__fadeIn">Contenedores y Barcos </h2>
                 <div className="row">
                   <div className="col-lg-9">
                     <p className="font-md color-grey-900 wow animate__animated animate__fadeIn">
-                      Our tracking system is updated in real-time...
+                      Nuestro sistema de seguimiento se actualiza en tiempo real...
                     </p>
                   </div>
                 </div>
                 <div className="row mt-50">
                   <div className="col-lg-6 mb-30">
                     <h6 className="chart-title font-md-bold color-grey-900 wow animate__animated animate__fadeIn">
-                      Boost your sale
+                      Impulsa tus ventas
                     </h6>
                     <p className="font-xs color-grey-900 wow animate__animated animate__fadeIn">
-                      The latest design trends meet hand-crafted templates.
+                      Con nuestros productos mayoristas obtienes los mejores precios de compra.
                     </p>
                   </div>
                   <div className="col-lg-6 mb-30">
                     <h6 className="chart-title font-md-bold color-grey-900 wow animate__animated animate__fadeIn">
-                      Boost your sale
+                      Documentación y Certificación
                     </h6>
                     <p className="font-xs color-grey-900 wow animate__animated animate__fadeIn">
-                      The latest design trends meet hand-crafted templates.
+                      Cada envío cuenta con la documentación y certificación necesaria para garantizar la calidad y seguridad de tu carga.
                     </p>
                   </div>
                   <div className="col-lg-6 mb-30">
                     <h6 className="feature2-title font-md-bold color-grey-900 wow animate__animated animate__fadeIn">
-                      Introducing New Features
+                      Flexibilidad en el Pago
                     </h6>
                     <p className="font-xs color-grey-900 wow animate__animated animate__fadeIn">
-                      The latest design trends meet hand-crafted templates.
+                      Ofrecemos diversas opciones de pago para adaptarnos a tus necesidades.
                     </p>
                   </div>
                   <div className="col-lg-6 mb-30">
                     <h6 className="feature3-title font-md-bold color-grey-900 wow animate__animated animate__fadeIn">
-                      Introducing New Features
+                      Nacionalización y Aduanas
                     </h6>
                     <p className="font-xs color-grey-900 wow animate__animated animate__fadeIn">
-                      The latest design trends meet hand-crafted templates.
+                      Hacemos que el proceso de nacionalización y aduanas sea sencillo y sin complicaciones.
                     </p>
                   </div>
                 </div>
@@ -310,9 +309,12 @@ export default function TrackParcel() {
                       <img className="mb-15" src="/assets/imgs/template/icons/play.svg" alt="transp" />
                     </div>
                     <div className="info-play wow animate__animated animate__fadeIn">
-                      <h4 className="color-white mb-15">We have 25 years experience in this passion</h4>
+                      <h4 className="color-white mb-15">Contamos con 3 años de experiencia y profesionalismo</h4>
                       <p className="font-sm color-white">
-                        There are many variations of passages of Lorem Ipsum available...
+                        A lo largo de los años,
+                                            hemos colaborado para ampliar nuestra red de socios y ofrecer fiabilidad y consistencia. 
+                                            También hemos logrado importantes avances para integrar la tecnología con nuestros procesos,
+                                             ofreciendo a nuestros clientes los mejores precios en cada compromiso.
                       </p>
                     </div>
                   </div>
@@ -328,7 +330,7 @@ export default function TrackParcel() {
             <div className="row align-items-center">
               <div className="col-lg-3 mb-30 text-center text-lg-start wow animate__animated animate__fadeIn">
                 <p className="font-2xl-bold color-brand-2">
-                  We are<span className="color-brand-1"> trusted</span> by major global brands
+                  Las principales<span className="color-brand-1"> marcas</span> trabajan con nosotros.
                 </p>
               </div>
               <div className="col-lg-9 mb-30">
@@ -341,7 +343,7 @@ export default function TrackParcel() {
             </div>
           </div>
         </div>
-                <section className="section pt-100">
+               {/* <section className="section pt-100">
                     <div className="container">
                         <div className="text-center"><span className="btn btn-tag color-grey-900 wow animate__animated animate__fadeIn">Our Features</span>
                             <h2 className="color-brand-2 mb-15 mt-20 wow animate__animated animate__fadeIn">Why choose us</h2>
@@ -460,12 +462,12 @@ export default function TrackParcel() {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section>*/}
                 <div className="mt-90" />
                 <div className="section bg-map d-block">
                     <div className="container">
                         <div className="box-newsletter">
-                            <h3 className="color-brand-2 mb-20 wow animate__animated animate__fadeIn">Get in Touch</h3>
+                            <h3 className="color-brand-2 mb-20 wow animate__animated animate__fadeIn">Mantente en Contacto</h3>
                             <div className="row">
                                 <div className="col-lg-5 mb-30">
                                     <div className="form-newsletter wow animate__animated animate__fadeIn">
@@ -473,15 +475,15 @@ export default function TrackParcel() {
                                             <div className="row">
                                                 <div className="col-md-6">
                                                     <div className="form-group">
-                                                        <input className="form-control" type="text" placeholder="Your name *" />
+                                                        <input className="form-control" type="text" placeholder="Tu nombre *" />
                                                     </div>
                                                 </div>
                                                 <div className="col-md-6">
                                                     <div className="form-group">
-                                                        <input className="form-control" type="text" placeholder="Your email *" />
+                                                        <input className="form-control" type="text" placeholder="Tu correo *" />
                                                     </div>
                                                 </div>
-                                                <div className="col-md-6">
+                                               {/* <div className="col-md-6">
                                                     <div className="form-group">
                                                         <input className="form-control" type="text" placeholder="Weight" />
                                                     </div>
@@ -490,14 +492,14 @@ export default function TrackParcel() {
                                                     <div className="form-group">
                                                         <input className="form-control" type="text" placeholder="Height" />
                                                     </div>
-                                                </div>
+                                                </div>*/}
                                                 <div className="col-md-12">
                                                     <div className="form-group">
-                                                        <textarea className="form-control" placeholder="Message / Note" rows={5} defaultValue={""} />
+                                                        <textarea className="form-control" placeholder="Mensaje / Nota" rows={5} defaultValue={""} />
                                                     </div>
                                                 </div>
                                                 <div className="col-md-12">
-                                                    <input className="btn btn-brand-1-big" type="submit" defaultValue="Submit Now" />
+                                                    <input className="btn btn-brand-1-big" type="enviar" defaultValue="Enviar" />
                                                 </div>
                                             </div>
                                         </form>
@@ -512,22 +514,22 @@ export default function TrackParcel() {
                                             <li className="wow animate__animated animate__fadeIn">
                                                 <div className="cardImage"><span className="icon-brand-1"><img src="/assets/imgs/page/homepage2/address.svg" alt="transp" /></span></div>
                                                 <div className="cardInfo">
-                                                    <h6 className="font-sm-bold color-grey-900">Address</h6>
+                                                    <h6 className="font-sm-bold color-grey-900">Dirección</h6>
                                                     <p className="font-sm color-grey-900">65 Allerton Street 901 N Pitt Str, USA</p>
                                                 </div>
                                             </li>
                                             <li className="wow animate__animated animate__fadeIn">
                                                 <div className="cardImage"><span className="icon-brand-1"><img src="/assets/imgs/page/homepage2/email.svg" alt="transp" /></span></div>
                                                 <div className="cardInfo">
-                                                    <h6 className="font-sm-bold color-grey-900">Email</h6>
-                                                    <p className="font-sm color-grey-900">contact@transp.com</p>
+                                                    <h6 className="font-sm-bold color-grey-900">Correo</h6>
+                                                    <p className="font-sm color-grey-900">joesupply@gmail.com</p>
                                                 </div>
                                             </li>
                                             <li className="wow animate__animated animate__fadeIn">
                                                 <div className="cardImage"><span className="icon-brand-1"><img src="/assets/imgs/page/homepage2/phone.svg" alt="transp" /></span></div>
                                                 <div className="cardInfo">
-                                                    <h6 className="font-sm-bold color-grey-900">Telephone</h6>
-                                                    <p className="font-sm color-grey-900">(+380) 50 318 47 07 - (+182) 50 318 47 07</p>
+                                                    <h6 className="font-sm-bold color-grey-900">Teléfono</h6>
+                                                    <p className="font-sm color-grey-900">+1 (561) 814‑0985 - +1 (561) 260‑2970</p>
                                                 </div>
                                             </li>
                                         </ul>

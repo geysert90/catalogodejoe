@@ -231,8 +231,8 @@ function ProductCard({ p }) {
 
           {/* Cantidad centrada */}
           <div
-            className="input-group input-group-sm mb-3"
-            style={{ maxWidth: 170, marginInline: "auto" }}
+            className="input-group input-group-sm mb-3 "
+            style={{ maxWidth: 140, marginInline: "auto", background: "rgba(34,197,94,0.08)" }}
           >
             <button
               type="button"
@@ -265,9 +265,9 @@ function ProductCard({ p }) {
 
           <div className="mt-auto d-grid gap-2">
             {/* Ajusta si tienes página de detalle */}
-            <Link className="btn btn-sm btn-brand-1 w-100 rounded-3" href="#">
+            {/*<Link className="btn btn-sm btn-brand-1 w-100 rounded-3" href="#">
               Ver detalle
-            </Link>
+            </Link>*/}
 
             {/* Botón WhatsApp */}
             <a

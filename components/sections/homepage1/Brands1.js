@@ -7,8 +7,8 @@ export default function Brands1() {
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-3 mb-30 text-center text-lg-start wow animate__animated animate__fadeIn">
-                            <p className="font-2xl-bold color-brand-2">Las principales <span className="color-brand-1"> marcas mundiales </span>
-                                confían en nosotros.</p>
+                            <p className="font-2xl-bold color-brand-2">Las principales <span className="color-brand-1"> marcas</span>
+                                trabajan con nosotros.</p>
                         </div>
                         <div className="col-lg-9 mb-30">
                             <div className="box-swiper">

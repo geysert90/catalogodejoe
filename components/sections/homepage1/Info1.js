@@ -5,11 +5,11 @@ export default function Info1() {
         <>
             <section className="section mt-85">
                 <div className="container">
-                    <div className="text-center"><img className="mb-15" src="/assets/imgs/template/icons/favicon.svg" alt="transp" />
-                        <p className="font-md color-grey-700 wow animate__animated animate__fadeIn">Delivering Results for
-                            Industry Leaders</p>
-                        <h2 className="color-brand-2 mb-65 mt-15 wow animate__animated animate__fadeIn">We are proud of our
-                            workforce<br className="d-none d-lg-block" />and have worked hard.</h2>
+                    <div className="text-center"><img className="mb-15" src="/assets/imgs/template/icons/joe-supply-embedded.svg" alt="Joe Supply" width="120" height="120" />
+                        <p className="font-md color-grey-700 wow animate__animated animate__fadeIn">Envíos mayoristas 
+                            para MyPymes</p>
+                        <h2 className="color-brand-2 mb-65 mt-15 wow animate__animated animate__fadeIn">Somos los principales proveedores
+                            Mayoristas<br className="d-none d-lg-block" />de envíos a CUBA.</h2>
                     </div>
                     <div className="row mt-50 align-items-center">
                         <div className="col-xl-7 col-lg-6 mb-30">
@@ -21,47 +21,45 @@ export default function Info1() {
                         </div>
                         <div className="col-xl-5 col-lg-6 mb-30">
                             <div className="box-info-pround">
-                                <h3 className="color-brand-2 mb-15 wow animate__animated animate__fadeIn">Fast shipping with the
-                                    most modern technology</h3>
-                                <p className="font-md color-grey-500 wow animate__animated animate__fadeIn">Over the years, we
-                                    have worked together to expand our network of partners to deliver reliability and
-                                    consistency. We’ve also made significant strides to tightly integrate technology with
-                                    our processes, giving our clients greater visibility into every engagement.</p>
+                                <h3 className="color-brand-2 mb-15 wow animate__animated animate__fadeIn">Envíos seguros y confiables con 
+                                    seguimiento en tiempo real</h3>
+                                <p className="font-md color-grey-500 wow animate__animated animate__fadeIn">A lo largo de los años, hemos colaborado para ampliar nuestra red de socios y ofrecer fiabilidad y consistencia. 
+                                    También hemos logrado importantes avances para integrar la tecnología con nuestros procesos, ofreciendo a nuestros clientes los mejores precios en cada compromiso.</p>
                                 <div className="mt-30">
                                     <ul className="list-ticks">
                                         <li className="wow animate__animated animate__fadeIn">
                                             <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                            </svg>Task tracking
+                                            </svg>Envíos rápidos y seguros
                                         </li>
                                         <li className="wow animate__animated animate__fadeIn">
                                             <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                            </svg>Create task dependencies
+                                            </svg>Seguimiento de envíos en tiempo real
                                         </li>
                                         <li className="wow animate__animated animate__fadeIn">
                                             <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                            </svg>Task visualization
+                                            </svg>Mejores precios garantizados
                                         </li>
                                         <li className="wow animate__animated animate__fadeIn">
                                             <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                            </svg>hare files, discuss
+                                            </svg>Seguridad y confianza en cada envío
                                         </li>
                                         <li className="wow animate__animated animate__fadeIn">
                                             <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                            </svg>Meet deadlines faster
+                                            </svg>Nacionalización de envíos
                                         </li>
                                         <li className="wow animate__animated animate__fadeIn">
                                             <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                            </svg>Track time spent on each project
+                                            </svg>Documentación y certificación de calidad de envíos
                                         </li>
                                     </ul>
                                 </div>
-                                <div className="mt-30 text-start d-flex wow animate__animated animate__fadeIn"><Link className="hover-up mr-10" href="#"><img src="/assets/imgs/template/appstore-btn.png" alt="transp" /></Link><Link className="hover-up" href="#"><img src="/assets/imgs/template/google-play-btn.png" alt="transp" /></Link></div>
+                                {/*<div className="mt-30 text-start d-flex wow animate__animated animate__fadeIn"><Link className="hover-up mr-10" href="#"><img src="/assets/imgs/template/appstore-btn.png" alt="transp" /></Link><Link className="hover-up" href="#"><img src="/assets/imgs/template/google-play-btn.png" alt="transp" /></Link></div>*/}
                             </div>
                         </div>
                     </div>
