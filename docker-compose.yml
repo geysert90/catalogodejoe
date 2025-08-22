@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  tienda:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        # Inyectada en el build para el bundle del cliente
+        NEXT_PUBLIC_DIRECTUS_URL: "https://admin.catalogodejoe.com"
+    environment:
+      NODE_ENV: "production"
+      # Disponibles en runtime (SSR/API lado servidor)
+      NEXT_PUBLIC_DIRECTUS_URL: "https://admin.catalogodejoe.com"
+      DIRECTUS_URL: "https://admin.catalogodejoe.com"
+      DIRECTUS_STATIC_TOKEN: "b_1QcTLkIHB89ShfSGe4M0uI2rA1dxBa"
+    ports:
+      - "3059:3000"
+    restart: unless-stopped
