@@ -91,13 +91,13 @@ function ProductCard({ p }) {
 
   return (
     <div className="col-6 col-md-4" key={p.id}>
-      <div className="card h-100 shadow-sm bg-white">
+      <div className="card h-100 shadow-sm bg-white hover-up">
         {/* Contenedor de imagen sin depender de .ratio de Bootstrap */}
-       <div
-          className="w-100"
+        <div
+          className="w-200 mx-auto"
           style={{
-            position: "relative",           // <-- para posicionar el badge
-            height: 400,
+            position: "relative",
+            height: 300,
             overflow: "hidden",
             borderTopLeftRadius: ".375rem",
             borderTopRightRadius: ".375rem",
@@ -109,7 +109,7 @@ function ProductCard({ p }) {
               style={{
                 position: "absolute",
                 top: 10,
-                left: 10,                    // esquina superior izquierda
+                left: 10,
                 zIndex: 2,
                 padding: "6px 10px",
                 borderRadius: "9999px",
@@ -165,72 +165,71 @@ function ProductCard({ p }) {
           </p>
 
           {/* Estado "En Mariel" o Fechas */}
-            {enMariel ? (
-              <div className="mb-3">
-                <div
-                  className="w-100 rounded-3 px-3 py-3"
-                  style={{
-                    // Card llamativa
-                    background:
-                      "linear-gradient(90deg, rgba(239,68,68,0.95) 0%, rgba(249,115,22,0.95) 100%)",
-                    color: "#fff",
-                    border: "1px solid rgba(255,255,255,0.3)",
-                    boxShadow: "0 6px 18px rgba(249,115,22,0.25)",
-                    minHeight: 52,
-                  }}
-                >
-                  <div className="d-flex align-items-center gap-2">
-                    <span style={{ fontSize: 20 }}>🚢</span>
-                    <div>
-                      <div className="text-uppercase fw-bold" style={{ letterSpacing: ".03em" }}>
-                        En Mariel
-                      </div>
-                      <div className="small" style={{ opacity: 0.95 }}>
-                        En el Puerto / Pendiente de Recogida
-                      </div>
+          {enMariel ? (
+            <div className="mb-3">
+              <div
+                className="w-100 rounded-3 px-3 py-3"
+                style={{
+                  background:
+                    "linear-gradient(90deg, rgba(239,68,68,0.95) 0%, rgba(249,115,22,0.95) 100%)",
+                  color: "#fff",
+                  border: "1px solid rgba(255,255,255,0.3)",
+                  boxShadow: "0 6px 18px rgba(249,115,22,0.25)",
+                  minHeight: 52,
+                }}
+              >
+                <div className="d-flex align-items-center gap-2">
+                  <span style={{ fontSize: 20 }}>🚢</span>
+                  <div>
+                    <div className="text-uppercase fw-bold" style={{ letterSpacing: ".03em" }}>
+                      En Mariel
+                    </div>
+                    <div className="small" style={{ opacity: 0.95 }}>
+                      En el Puerto / Pendiente de Recogida
                     </div>
                   </div>
                 </div>
               </div>
-            ) : (
-              <div className="d-flex gap-2 mb-3">
-                <div
-                  className="flex-fill rounded-3 px-2 py-2"
-                  style={{
-                    background: "rgba(62,127,255,0.08)",
-                    border: "1px solid #3E7FFF",
-                    color: "#2449A1",
-                    minHeight: 52,
-                  }}
-                >
-                  <div className="text-uppercase fw-semibold" style={{ fontSize: 11, opacity: 0.8 }}>
-                    Salida
-                  </div>
-                  <div style={{ fontSize: 13, fontWeight: 600 }}>
-                    {salida || "—"}
-                  </div>
+            </div>
+          ) : (
+            <div className="d-flex gap-2 mb-3">
+              <div
+                className="flex-fill rounded-3 px-2 py-2"
+                style={{
+                  background: "rgba(62,127,255,0.08)",
+                  border: "1px solid #3E7FFF",
+                  color: "#2449A1",
+                  minHeight: 52,
+                }}
+              >
+                <div className="text-uppercase fw-semibold" style={{ fontSize: 11, opacity: 0.8 }}>
+                  Salida
                 </div>
-                <div
-                  className="flex-fill rounded-3 px-2 py-2"
-                  style={{
-                    background: "rgba(34,197,94,0.08)",
-                    border: "1px solid #22C55E",
-                    color: "#166534",
-                    minHeight: 52,
-                  }}
-                >
-                  <div className="text-uppercase fw-semibold" style={{ fontSize: 11, opacity: 0.8 }}>
-                    Llegada
-                  </div>
-                  <div style={{ fontSize: 13, fontWeight: 600 }}>
-                    {llegada || "—"}
-                  </div>
+                <div style={{ fontSize: 13, fontWeight: 600 }}>
+                  {salida || "—"}
                 </div>
               </div>
-            )}
+              <div
+                className="flex-fill rounded-3 px-2 py-2"
+                style={{
+                  background: "rgba(34,197,94,0.08)",
+                  border: "1px solid #22C55E",
+                  color: "#166534",
+                  minHeight: 52,
+                }}
+              >
+                <div className="text-uppercase fw-semibold" style={{ fontSize: 11, opacity: 0.8 }}>
+                  Llegada
+                </div>
+                <div style={{ fontSize: 13, fontWeight: 600 }}>
+                  {llegada || "—"}
+                </div>
+              </div>
+            </div>
+          )}
 
           {/* Cantidad centrada */}
-          <div
+        {/*  <div
             className="input-group input-group-sm mb-3 "
             style={{ maxWidth: 140, marginInline: "auto", background: "rgba(34,197,94,0.08)" }}
           >
@@ -261,14 +260,9 @@ function ProductCard({ p }) {
             >
               +
             </button>
-          </div>
+          </div>*/}
 
           <div className="mt-auto d-grid gap-2">
-            {/* Ajusta si tienes página de detalle */}
-            {/*<Link className="btn btn-sm btn-brand-1 w-100 rounded-3" href="#">
-              Ver detalle
-            </Link>*/}
-
             {/* Botón WhatsApp */}
             <a
               className="btn btn-sm btn-success d-flex align-items-center justify-content-center gap-2 rounded-3"
@@ -295,6 +289,7 @@ export default function TiendaPage({
   total,
   selectedCategory,
   search,
+  nat, // '1' = nacionalizados (default), '0' = no nacionalizados
 }) {
   const totalPages = Math.max(1, Math.ceil((total || 0) / pageSize));
 
@@ -312,7 +307,10 @@ export default function TiendaPage({
                     <Link
                       href={{
                         pathname: "/tienda",
-                        query: { ...(search ? { q: search } : {}) },
+                        query: {
+                          ...(search ? { q: search } : {}),
+                          nat: nat ?? "1",
+                        },
                       }}
                       className={!selectedCategory ? "fw-bold" : ""}
                     >
@@ -324,7 +322,11 @@ export default function TiendaPage({
                       <Link
                         href={{
                           pathname: "/tienda",
-                          query: { cat: cat.id, ...(search ? { q: search } : {}) },
+                          query: {
+                            cat: cat.id,
+                            ...(search ? { q: search } : {}),
+                            nat: nat ?? "1",
+                          },
                         }}
                         className={
                           Number(selectedCategory) === Number(cat.id)
@@ -342,11 +344,48 @@ export default function TiendaPage({
 
             {/* Listado de productos */}
             <div className="col-lg-9">
-              <div className="d-flex align-items-center justify-content-between mb-3">
-                <h3 className="m-0">Tienda</h3>
+              <div className="d-flex flex-wrap align-items-center justify-content-between mb-3 gap-2">
+                {/*<h3 className="m-0">Tienda</h3>*/}
+
+                {/* Botonera de filtros Nacionalizado */}
+                <div className="btn-group" role="group" aria-label="Filtro nacionalizado">
+                  <Link
+                    className={`btn btn-sm ${nat === "0" ? "btn-outline-secondary" : "btn-brand-1"}`}
+                    href={{
+                      pathname: "/tienda",
+                      query: {
+                        ...(selectedCategory ? { cat: selectedCategory } : {}),
+                        ...(search ? { q: search } : {}),
+                        nat: "1",
+                        page: 1,
+                      },
+                    }}
+                  >
+                    Nacionalizados
+                  </Link>
+                  <Link
+                    className={`btn btn-sm ${nat === "0" ? "btn-brand-1" : "btn-outline-secondary"}`}
+                    href={{
+                      pathname: "/tienda",
+                      query: {
+                        ...(selectedCategory ? { cat: selectedCategory } : {}),
+                        ...(search ? { q: search } : {}),
+                        nat: "0",
+                        page: 1,
+                      },
+                    }}
+                  >
+                    No nacionalizados
+                  </Link>
+                </div>
+
+                {/* Buscador */}
                 <form className="d-flex" method="GET" action="/tienda">
                   {selectedCategory && (
                     <input type="hidden" name="cat" value={selectedCategory} />
+                  )}
+                  {typeof nat !== "undefined" && (
+                    <input type="hidden" name="nat" value={nat} />
                   )}
                   <input
                     name="q"
@@ -373,8 +412,14 @@ export default function TiendaPage({
                     Búsqueda: <strong>{search}</strong>.{" "}
                   </>
                 ) : null}
+                <span className="me-2">
+                  Filtro:{" "}
+                  <strong>
+                    {nat === "0" ? "No nacionalizados" : "Nacionalizados"}
+                  </strong>
+                </span>
                 <span>
-                  Mostrando página <strong>{page}</strong> de{" "}
+                  · Mostrando página <strong>{page}</strong> de{" "}
                   <strong>{Math.max(1, Math.ceil((total || 0) / pageSize))}</strong>{" "}
                   · <strong>{total}</strong> resultados
                 </span>
@@ -406,6 +451,7 @@ export default function TiendaPage({
                           query: {
                             ...(selectedCategory ? { cat: selectedCategory } : {}),
                             ...(search ? { q: search } : {}),
+                            nat: nat ?? "1",
                             page: Math.max(1, page - 1),
                           },
                         }}
@@ -428,6 +474,7 @@ export default function TiendaPage({
                               query: {
                                 ...(selectedCategory ? { cat: selectedCategory } : {}),
                                 ...(search ? { q: search } : {}),
+                                nat: nat ?? "1",
                                 page: n,
                               },
                             }}
@@ -450,6 +497,7 @@ export default function TiendaPage({
                           query: {
                             ...(selectedCategory ? { cat: selectedCategory } : {}),
                             ...(search ? { q: search } : {}),
+                            nat: nat ?? "1",
                             page: Math.min(totalPages, page + 1),
                           },
                         }}
@@ -482,6 +530,7 @@ export async function getServerSideProps(ctx) {
       total: 0,
       selectedCategory: null,
       search: "",
+      nat: "1",
     },
   };
   if (!base || !token) return empty;
@@ -490,6 +539,8 @@ export async function getServerSideProps(ctx) {
   const page = Math.max(1, parseInt(ctx.query.page || "1", 10));
   const selectedCategory = ctx.query.cat ? String(ctx.query.cat) : null;
   const search = ctx.query.q ? String(ctx.query.q) : "";
+  // Nuevo filtro: nat = '1' nacionalizados (true), '0' no nacionalizados (false)
+  const nat = typeof ctx.query.nat !== "undefined" ? String(ctx.query.nat) : "1";
 
   // Categorías
   const catUrl = new URL(`${base}/items/categorias`);
@@ -505,15 +556,16 @@ export async function getServerSideProps(ctx) {
       "nombre",
       "descripcion",
       "precio",
-      "fecha_salida",          // <-- añadido
-      "fecha_llegada",         // <-- añadido
-      "imagen",                 // si es string id/URL
-      "imagen.id",              // si es relación File
+      "fecha_salida",
+      "fecha_llegada",
+      "imagen",
+      "imagen.id",
       "imagen.filename_disk",
       "imagen.filename_download",
       "en_mariel",
       "oferta_especial",
       "Disponible",
+      "nacionalizado",        // <-- NUEVO CAMPO
       "categoria_id.id",
       "categoria_id.nombre",
     ].join(",")
@@ -522,7 +574,17 @@ export async function getServerSideProps(ctx) {
   prodUrl.searchParams.set("offset", String((page - 1) * pageSize));
   prodUrl.searchParams.set("meta", "filter_count");
   prodUrl.searchParams.set("sort", "-id");
+
+  // Filtros
   prodUrl.searchParams.set("filter[Disponible][_eq]", "true");
+
+  // Filtro por nacionalizado (default true)
+  if (nat === "0") {
+    prodUrl.searchParams.set("filter[nacionalizado][_eq]", "false");
+  } else {
+    prodUrl.searchParams.set("filter[nacionalizado][_eq]", "true");
+  }
+
   if (selectedCategory) {
     prodUrl.searchParams.set("filter[categoria_id][_eq]", selectedCategory);
   }
@@ -552,6 +614,7 @@ export async function getServerSideProps(ctx) {
         total,
         selectedCategory,
         search,
+        nat, // devolvemos el filtro para la UI
       },
     };
   } catch (e) {
@@ -565,6 +628,7 @@ export async function getServerSideProps(ctx) {
         total: 0,
         selectedCategory,
         search,
+        nat,
         error: "No se pudieron cargar los datos",
       },
     };
