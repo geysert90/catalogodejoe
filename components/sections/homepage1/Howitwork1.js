@@ -6,9 +6,9 @@ export default function Howitwork1() {
                 <div className="container">
                     <div className="text-center"><img className="mb-15" src="/assets/imgs/template/icons/joe-supply-embedded.svg" alt="Joe Supply" width="120" height="120" />
                         <h2 className="color-brand-2 mb-20 wow animate__animated animate__fadeIn">Como Funciona ?</h2>
-                        <p className="font-md color-grey-700 wow animate__animated animate__fadeIn">Usted elige los productos de preferncia
-                            con mas salida en el mercado, nosotros le ofrecemos los mejores precios mayoristas y le garantizamos la seguridad y calidad de su carga,
-                            ademas de un seguimiento en tiempo real de su pedido.
+                        <p className="font-md color-grey-700 wow animate__animated animate__fadeIn">Usted Elige los Productos de su Preferencia
+                            con más Salida en el Mercado Cubano, Nosotros le Ofrecemos los Mejores Precios y le Garantizamos la Seguridad, Calidad y Rapidéz de su Carga,
+                            además de un Seguimiento en Tiempo Real de su Pedido.
                         </p>
                     </div>
                     <div className="row mt-50">
@@ -17,12 +17,13 @@ export default function Howitwork1() {
                                 <div className="box-info-bottom-img">
                                     <div className="image-play"><img className="mb-15 wow animate__animated animate__fadeIn" src="/assets/imgs/template/icons/play.svg" alt="transp" /></div>
                                     <div className="info-play">
-                                        <h4 className="color-white mb-15 wow animate__animated animate__fadeIn">Contamos con 3 años de
-                                            experiencia y profesionalismo</h4>
-                                        <p className="font-sm color-white wow animate__animated animate__fadeIn">A lo largo de los años,
-                                            hemos colaborado para ampliar nuestra red de socios y ofrecer fiabilidad y consistencia. 
-                                            También hemos logrado importantes avances para integrar la tecnología con nuestros procesos,
-                                             ofreciendo a nuestros clientes los mejores precios en cada compromiso.
+                                        <h4 className="color-white mb-15 wow animate__animated animate__fadeIn">Contamos con la Experiencia y el Profesionalismo necesario para Garantizar 
+                                            un Servicio Logístico Confiable.</h4>
+                                        <p className="font-sm color-white wow animate__animated animate__fadeIn">A lo largo de los años hemos trabajado con fábricas internacionales y principales importadoras cubanas.
+                                        Ofrecemos envíos marítimos rápidos y seguros hacia Cuba, con seguimiento en tiempo real.
+                                        Nuestro equipo altamente capacitado asegura eficiencia y transparencia en cada operación.
+                                        Su carga siempre protegida, con los mejores precios y tiempos de entrega del mercado.
+                                        Más que un proveedor, somos un aliado estratégico para sus negocios en Cuba.
                                         </p>
                                     </div>
                                 </div>
@@ -33,36 +34,36 @@ export default function Howitwork1() {
                                 <li>
                                     <div className="image-how"><span className="img"><img src="/assets/imgs/page/homepage1/order.png" alt="transp" /></span></div>
                                     <div className="info-how">
-                                        <h5 className="color-brand-2 wow animate__animated animate__fadeIn">El cliente hace el
-                                            pedido</h5>
+                                        <h5 className="color-brand-2 wow animate__animated animate__fadeIn">El Cliente hace el
+                                            Pedido</h5>
                                         <p className="font-md color-grey-700 wow animate__animated animate__fadeIn">Inspección 
-                                            y control de calidad de las mercancías</p>
+                                            y Control de Calidad de las Mercancías</p>
                                
                                     </div>
                                 </li>
                                 <li>
                                     <div className="image-how"><span className="img"><img src="/assets/imgs/page/homepage1/payment.png" alt="transp" /></span></div>
                                     <div className="info-how">
-                                        <h5 className="color-brand-2 wow animate__animated animate__fadeIn">Realiza el pago
+                                        <h5 className="color-brand-2 wow animate__animated animate__fadeIn">Realiza el Pago
                                         </h5>
-                                        <p className="font-md color-grey-700 wow animate__animated animate__fadeIn">Puede pagar total
-                                            o parcial su carga</p>
+                                        <p className="font-md color-grey-700 wow animate__animated animate__fadeIn">Aceptamos Varios
+                                            Métodos de Pago</p>
                                     </div>
                                 </li>
                                 <li>
                                     <div className="image-how"><span className="img"><img src="/assets/imgs/page/homepage1/warehouse.png" alt="transp" /></span></div>
                                     <div className="info-how">
-                                        <h5 className="color-brand-2 wow animate__animated animate__fadeIn">El almacen recibe la
-                                            orden</h5>
-                                        <p className="font-md color-grey-700 wow animate__animated animate__fadeIn">Se Verifica la exactitud 
-                                            de la mercancía.</p>
+                                        <h5 className="color-brand-2 wow animate__animated animate__fadeIn">Sacamos el Producto
+                                            de Fábrica</h5>
+                                        <p className="font-md color-grey-700 wow animate__animated animate__fadeIn">Se Verifíca la Exactitud 
+                                            de la Mercancía.</p>
                                     </div>
                                 </li>
                                 <li>
                                     <div className="image-how"><span className="img"><img src="/assets/imgs/page/homepage1/barco.png" alt="transp" /></span></div>
                                     <div className="info-how">
-                                        <h5 className="color-brand-2 wow animate__animated animate__fadeIn">Mercancía embalada
-                                            &amp; enviada</h5>
+                                        <h5 className="color-brand-2 wow animate__animated animate__fadeIn">Mercancía Embalada
+                                            &amp; Enviada</h5>
                                         <p className="font-md color-grey-700 wow animate__animated animate__fadeIn">Contenedor
                                             cargado y enviado a Cuba con seguimiento</p>
                                     </div>
@@ -70,10 +71,10 @@ export default function Howitwork1() {
                                 <li>
                                     <div className="image-how"><span className="img"><img src="/assets/imgs/page/homepage1/puerto.png" alt="transp" /></span></div>
                                     <div className="info-how">
-                                        <h5 className="color-brand-2 wow animate__animated animate__fadeIn">Mercancía en puerto &amp; lista para
-                                            recogida</h5>
-                                        <p className="font-md color-grey-700 wow animate__animated animate__fadeIn">Actualizado el estado del pedido
-                                             en el sistema</p>
+                                        <h5 className="color-brand-2 wow animate__animated animate__fadeIn">Contenedor listo para
+                                            Recoger en Cuba</h5>
+                                        <p className="font-md color-grey-700 wow animate__animated animate__fadeIn">Actualizado el Estado del Pedido
+                                             en el Sistema</p>
                                     </div>
                                 </li>
                             </ul>

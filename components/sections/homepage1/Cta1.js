@@ -7,8 +7,8 @@ export default function Cta1() {
                 <div className="container">
                     <div className="box-get-quote">
                         <div className="get-quote-left">
-                            <p className="font-3xl color-white mb-10 wow animate__animated animate__fadeIn">No sabes donde esta tu carga ?</p>
-                            <h2 className="color-brand-1 wow animate__animated animate__fadeIn">Es muy fácil, solo ingresa el numero de seguimiento
+                            <p className="font-3xl color-white mb-10 wow animate__animated animate__fadeIn">No sabes dónde está tu Contenedor ?</p>
+                            <h2 className="color-brand-1 wow animate__animated animate__fadeIn">Es muy Fácil, solo Ingresa el Número de Seguimiento
                             </h2>
                         </div>
                         <div className="get-quote-right"><Link className="btn btn-get-quote wow animate__animated animate__fadeIn" href="/seguirpedido">

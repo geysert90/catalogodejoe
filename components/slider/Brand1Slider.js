@@ -50,19 +50,19 @@ export default function Brand1Slider() {
                 className="swiper-wrapper wow animate__animated animate__fadeIn"
             >
 
+                <SwiperSlide><img src="/assets/imgs/slider/logo/CMA_CGM_logo.png" alt="transp" />
+                </SwiperSlide>
+                <SwiperSlide><img src="/assets/imgs/slider/logo/Hapag-Lloyd.png" alt="transp" />
+                </SwiperSlide>
+                <SwiperSlide><img src="/assets/imgs/slider/logo/hor-logo.png" alt="transp" />
+                </SwiperSlide>
+                <SwiperSlide><img src="/assets/imgs/slider/logo/Logo_of_Crowley.png" alt="transp" />
+                </SwiperSlide>
+                <SwiperSlide><img src="/assets/imgs/slider/logo/pilgrims_logo-1.png" alt="transp" />
+                </SwiperSlide>
                 <SwiperSlide><img src="/assets/imgs/slider/logo/alea.png" alt="transp" />
                 </SwiperSlide>
-                <SwiperSlide><img src="/assets/imgs/slider/logo/land.png" alt="transp" />
-                </SwiperSlide>
-                <SwiperSlide><img src="/assets/imgs/slider/logo/logis.png" alt="transp" />
-                </SwiperSlide>
-                <SwiperSlide><img src="/assets/imgs/slider/logo/truck.png" alt="transp" />
-                </SwiperSlide>
-                <SwiperSlide><img src="/assets/imgs/slider/logo/saltos.png" alt="transp" />
-                </SwiperSlide>
                 <SwiperSlide><img src="/assets/imgs/slider/logo/creati.png" alt="transp" />
-                </SwiperSlide>
-                <SwiperSlide><img src="/assets/imgs/slider/logo/logis.png" alt="transp" />
                 </SwiperSlide>
                 <SwiperSlide><img src="/assets/imgs/slider/logo/truck.png" alt="transp" />
                 </SwiperSlide>

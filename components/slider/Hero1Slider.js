@@ -24,17 +24,19 @@ export default function Hero1Slider() {
                 className="swiper-wrapper"
             >
                 <SwiperSlide>
-                    <div className="banner-1" style={{ backgroundImage: 'url(assets/imgs/page/homepage1/banner.png)' }}>
+                    <div className="banner-1" style={{ backgroundImage: 'url(assets/imgs/page/homepage1/banner-1.png)' }}>
                         <div className="container">
                             <div className="row align-items-center">
                                 <div className="col-lg-12">
-                                    <p className="font-md color-white mb-15 wow animate__animated animate__fadeIn" data-wow-delay=".0s">Logística &amp; Paquetería</p>
-                                    <h1 className="color-white mb-25 wow animate__animated animate__fadeInUp" data-wow-delay=".0s">Empresa de Transporte Marítimo<br className="d-none d-lg-block" />Rápida y Confiable</h1>
+                                    <p className="font-xl color-dark mb-15 wow animate__animated animate__fadeIn" data-wow-delay=".0s">Joe Supply LLC</p>
+                                    <h1 className="color-dark mb-25 wow animate__animated animate__fadeInUp" data-wow-delay=".0s">Empresa Americana Especializada en <br className="d-none d-lg-block" />Importación hacia Cuba</h1>
                                     <div className="row">
                                         <div className="col-lg-6">
-                                            <p className="font-md color-white mb-20 wow animate__animated animate__fadeInUp" data-wow-delay=".0s">
+                                            <p className="font-md color-dark mb-20 wow animate__animated animate__fadeInUp" data-wow-delay=".0s">
 
-                                            Nuestro experimentado equipo de solucionadores de problemas y el compromiso de alinearnos siempre con las metas y objetivos comerciales de nuestros clientes son lo que impulsa el éxito mutuo.
+                                           Los precios más competitivos del mercado y la mayor rapidez en la entrega.
+                                            Nos encargamos de la nacionalización de sus cargas en Cuba, gestionando todo el proceso legal y aduanal por usted.
+                                            Importación directa desde Estados Unidos, con un servicio seguro, eficiente y confiable.
 
                                             </p>
                                         </div>
@@ -51,18 +53,19 @@ export default function Hero1Slider() {
                         </div>
                     </div>
                 </SwiperSlide>
-                <SwiperSlide>
-                    <div className="banner-1" style={{ backgroundImage: 'url(assets/imgs/page/homepage1/banner-2.png)' }}>
+               <SwiperSlide>
+                    <div className="banner-1" style={{ backgroundImage: 'url(assets/imgs/page/homepage1/banner-1.png)' }}>
                         <div className="container">
                             <div className="row align-items-center">
                                 <div className="col-lg-12">
-                                    <p className="font-md color-white mb-15 wow animate__animated animate__fadeInUp" data-wow-delay=".0s">Logística &amp; Paquetería</p>
-                                    <h1 className="color-white mb-25 wow animate__animated animate__fadeInUp" data-wow-delay=".0s">Empresa de Transporte Marítimo<br className="d-none d-lg-block" />Rápida y Confiable</h1>
+                                    <p className="font-xl color-dark mb-15 wow animate__animated animate__fadeInUp" data-wow-delay=".0s">Joe Supply LLC</p>
+                                    <h1 className="color-dark mb-25 wow animate__animated animate__fadeInUp" data-wow-delay=".0s">Empresa Americana Especializada en <br className="d-none d-lg-block" />Importación hacia Cuba</h1>
                                     <div className="row">
                                         <div className="col-lg-6">
-                                            <p className="font-md color-white mb-20 wow animate__animated animate__fadeInUp" data-wow-delay=".0s">
-                                                Nuestro experimentado equipo de solucionadores de problemas y el compromiso de alinearnos siempre con las metas y objetivos comerciales de nuestros clientes son lo que impulsa el éxito mutuo.
-                                            </p>
+                                            <p className="font-md color-dark mb-20 wow animate__animated animate__fadeInUp" data-wow-delay=".0s">
+                                            Los precios más competitivos del mercado y la mayor rapidez en la entrega.
+                                            Nos encargamos de la nacionalización de sus cargas en Cuba, gestionando todo el proceso legal y aduanal por usted.
+                                            Importación directa desde Estados Unidos, con un servicio seguro, eficiente y confiable.                                            </p>
                                         </div>
                                     </div>
                                     <div className="box-button mt-30"><Link className="btn btn-brand-1-big hover-up mr-40 wow animate__animated animate__fadeInUp" href="/tienda">Ver Catálogo</Link>

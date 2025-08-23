@@ -512,6 +512,7 @@ export default function TiendaPage({
           </div>
         </div>
       </section>
+      
     </Layout>
   );
 }
