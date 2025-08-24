@@ -21,7 +21,7 @@ export default function Footer1({ }) {
 
                 <p className="font-md mb-20  color-white" style={{ textAlign: "justify" }}>
                   Somos una Empresa Americana Especializada en Importación hacia Cuba.
-                  Con los Precios más Competitivos del Mercado y la Mayor Rapidéz en la Entrega.
+                  Con los Precios más Competitivos del Mercado y la Mayor Rapidez en la Entrega.
                 </p>
               </div>
 
@@ -71,7 +71,7 @@ export default function Footer1({ }) {
                       Para ello debe estar registrado como cliente en dichas entidades.
                     </p>
                     <p className="color-white mb-0" style={{ textAlign: "justify" }}>
-                      Si es MIPME, TCP o Cooperativa y aún no está registrado, le apoyamos
+                      Si es MIPYME, TCP o Cooperativa y aún no está registrado, le apoyamos
                       en el proceso siempre que cuente con la documentación en regla.
                     </p>
                   </div>

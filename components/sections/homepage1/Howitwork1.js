@@ -5,14 +5,14 @@ export default function Howitwork1() {
             <section className="section pt-85 bg-worldmap">
                 <div className="container">
                     <div className="text-center"><img className="mb-15" src="/assets/imgs/template/icons/joe-supply-embedded.svg" alt="Joe Supply" width="120" height="120" />
-                        <h2 className="color-brand-2 mb-20 wow animate__animated animate__fadeIn">Cómo Funciona ?</h2>
+                        <h2 className="color-brand-2 mb-20 wow animate__animated animate__fadeIn">¿Cómo Funciona ?</h2>
                         <p className="font-md color-grey-700 wow animate__animated animate__fadeIn">Usted Elige los Productos de su Preferencia
                             con más Salida en el Mercado Cubano, Nosotros le Ofrecemos los Mejores Precios y le Garantizamos la Seguridad, Calidad y Rapidéz de su Carga,
                             además de un Seguimiento en Tiempo Real de su Pedido.
                         </p>
                     </div>
                     <div className="row mt-50">
-                        <div className="col-lg-6 mb-30">
+                        <div className="col-xl-6 mb-30">
                             <div className="box-image-how"><img className="w-100 wow animate__animated animate__fadeIn" src="/assets/imgs/page/homepage1/how-it-work.png" alt="transp" />
                                 <div className="box-info-bottom-img">
                                     <div className="image-play"><img className="mb-15 wow animate__animated animate__fadeIn" src="/assets/imgs/template/icons/play.svg" alt="transp" /></div>
