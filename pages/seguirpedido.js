@@ -170,8 +170,8 @@ export default function TrackParcel() {
             <div className="banner-trackyourparcel" />
             <div className="box-info-trackyourparcel">
               <h2 className="color-brand-2 mb-25 wow animate__animated animate__fadeIn">
-                El seguimiento de paquetes es fácil<br className="d-none d-lg-block" />
-                con tu código de seguimiento
+                El Rastreo de Contenedores es Fácil<br className="d-none d-lg-block" />
+                con tu Código de Seguimiento
               </h2>
               <p className="color-grey-900 font-md wow animate__animated animate__fadeIn">
                 Desde Estados Unidos y Centroamérica hasta el puerto del Mariel (Cuba)
@@ -296,7 +296,7 @@ export default function TrackParcel() {
                       Nacionalización y Aduanas
                     </h6>
                     <p className="font-xs color-grey-900 wow animate__animated animate__fadeIn">
-                      Hacemos que el proceso de nacionalización y aduanas sea sencillo y sin complicaciones.
+                      Nos encargamos de la nacionalización de sus cargas en Cuba, gestionando todo el proceso legal y aduanal por usted.
                     </p>
                   </div>
                 </div>
@@ -309,12 +309,13 @@ export default function TrackParcel() {
                       <img className="mb-15" src="/assets/imgs/template/icons/play.svg" alt="transp" />
                     </div>
                     <div className="info-play wow animate__animated animate__fadeIn">
-                      <h4 className="color-white mb-15">Contamos con 3 años de experiencia y profesionalismo</h4>
+                      <h4 className="color-white mb-15">Contamos con la Experiencia y el Profesionalismo necesario para Garantizar un Servicio Logístico Confiable.</h4>
                       <p className="font-sm color-white">
-                        A lo largo de los años,
-                                            hemos colaborado para ampliar nuestra red de socios y ofrecer fiabilidad y consistencia. 
-                                            También hemos logrado importantes avances para integrar la tecnología con nuestros procesos,
-                                             ofreciendo a nuestros clientes los mejores precios en cada compromiso.
+                        A lo largo de los años hemos trabajado con fábricas internacionales y principales importadoras cubanas. 
+                        Ofrecemos envíos marítimos rápidos y seguros hacia Cuba, con seguimiento en tiempo real. 
+                        Nuestro equipo altamente capacitado asegura eficiencia y transparencia en cada operación. 
+                        Su carga siempre protegida, con los mejores precios y tiempos de entrega del mercado. Más que un proveedor, 
+                        somos un aliado estratégico para sus negocios en Cuba.
                       </p>
                     </div>
                   </div>
@@ -530,7 +531,7 @@ export default function TrackParcel() {
                                                 <div className="cardImage"><span className="icon-brand-1"><img src="/assets/imgs/page/homepage2/email.svg" alt="transp" /></span></div>
                                                 <div className="cardInfo">
                                                     <h6 className="font-sm-bold color-grey-900">Correo</h6>
-                                                    <p className="font-sm color-grey-900">joesupplyllc@gmail.com</p>
+                                                    <p className="font-sm color-grey-900">molivera@joesupplyllc.com</p>
                                                 </div>
                                             </li>
                                             <li className="wow animate__animated animate__fadeIn">

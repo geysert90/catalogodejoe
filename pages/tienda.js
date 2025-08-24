@@ -348,9 +348,13 @@ export default function TiendaPage({
                 {/*<h3 className="m-0">Tienda</h3>*/}
 
                 {/* Botonera de filtros Nacionalizado */}
-                <div className="btn-group" role="group" aria-label="Filtro nacionalizado">
+                <div
+                  className="d-flex flex-wrap gap-2 justify-content-center"  // 👉 centra el grupo
+                  role="group"
+                  aria-label="Filtro nacionalizado"
+                >
                   <Link
-                    className={`btn btn-sm ${nat === "0" ? "btn-outline-secondary" : "btn-brand-1"}`}
+                    className={`btn btn-sm d-inline-flex align-items-center justify-content-center text-center ${nat === "1" ? "btn-brand-1" : "btn-outline-secondary"}`}
                     href={{
                       pathname: "/tienda",
                       query: {
@@ -360,11 +364,13 @@ export default function TiendaPage({
                         page: 1,
                       },
                     }}
+                    style={{ minWidth: 180 }}  // opcional: mismo ancho, texto centrado
                   >
-                    Nacionalizados
+                    Con Nacionalización
                   </Link>
+
                   <Link
-                    className={`btn btn-sm ${nat === "0" ? "btn-brand-1" : "btn-outline-secondary"}`}
+                    className={`btn btn-sm d-inline-flex align-items-center justify-content-center text-center ${nat === "0" ? "btn-brand-1" : "btn-outline-secondary"}`}
                     href={{
                       pathname: "/tienda",
                       query: {
@@ -374,10 +380,13 @@ export default function TiendaPage({
                         page: 1,
                       },
                     }}
+                    style={{ minWidth: 180 }}  // opcional: mismo ancho, texto centrado
                   >
-                    No nacionalizados
+                    Sin Nacionalización
                   </Link>
                 </div>
+
+
 
                 {/* Buscador */}
                 <form className="d-flex" method="GET" action="/tienda">
@@ -512,6 +521,7 @@ export default function TiendaPage({
           </div>
         </div>
       </section>
+      
     </Layout>
   );
 }

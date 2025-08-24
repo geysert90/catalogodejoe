@@ -14,7 +14,7 @@ export default function Hero1Slider() {
                 spaceBetween={0}
                 loop={true}
                 autoplay={{
-                    delay: 2500,
+                    delay: 5500,
                     disableOnInteraction: false,
                 }}
                 pagination={{
@@ -28,18 +28,20 @@ export default function Hero1Slider() {
                         <div className="container">
                             <div className="row align-items-center">
                                 <div className="col-lg-12">
-                                    <p className="font-xl color-dark mb-15 wow animate__animated animate__fadeIn" data-wow-delay=".0s">Joe Supply LLC</p>
+                                    <p className="font-3xl color-dark mb-15 wow animate__animated animate__fadeIn" data-wow-delay=".0s">Joe Supply LLC</p>
                                     <h1 className="color-dark mb-25 wow animate__animated animate__fadeInUp" data-wow-delay=".0s">Empresa Americana Especializada en <br className="d-none d-lg-block" />Importación hacia Cuba</h1>
                                     <div className="row">
-                                        <div className="col-lg-6">
-                                            <p className="font-md color-dark mb-20 wow animate__animated animate__fadeInUp" data-wow-delay=".0s">
-
-                                           Los precios más competitivos del mercado y la mayor rapidez en la entrega.
-                                            Nos encargamos de la nacionalización de sus cargas en Cuba, gestionando todo el proceso legal y aduanal por usted.
-                                            Importación directa desde Estados Unidos, con un servicio seguro, eficiente y confiable.
-
-                                            </p>
-                                        </div>
+                                    <div className="col-lg-6">
+                                        <p
+                                        className="font-xl color-dark mb-20 wow animate__animated animate__fadeInUp"
+                                        data-wow-delay=".0s"
+                                        style={{ fontWeight: 700, textAlign: "justify" }}
+                                        >
+                                        Los precios más competitivos del mercado y la mayor rapidez en la entrega.
+                                        Nos encargamos de la nacionalización de sus cargas en Cuba, gestionando todo el proceso legal y aduanal por usted.
+                                        Importación directa desde Estados Unidos, con un servicio seguro, eficiente y confiable.
+                                        </p>
+                                    </div>
                                     </div>
                                     <div className="box-button mt-30">
                                         <Link className="btn btn-brand-1-big hover-up mr-40 wow animate__animated animate__fadeInUp" href="/tienda">Ver Catálogo</Link>
@@ -58,15 +60,20 @@ export default function Hero1Slider() {
                         <div className="container">
                             <div className="row align-items-center">
                                 <div className="col-lg-12">
-                                    <p className="font-xl color-dark mb-15 wow animate__animated animate__fadeInUp" data-wow-delay=".0s">Joe Supply LLC</p>
+                                    <p className="font-3xl color-dark mb-15 wow animate__animated animate__fadeInUp" data-wow-delay=".0s">Joe Supply LLC</p>
                                     <h1 className="color-dark mb-25 wow animate__animated animate__fadeInUp" data-wow-delay=".0s">Empresa Americana Especializada en <br className="d-none d-lg-block" />Importación hacia Cuba</h1>
                                     <div className="row">
-                                        <div className="col-lg-6">
-                                            <p className="font-md color-dark mb-20 wow animate__animated animate__fadeInUp" data-wow-delay=".0s">
-                                            Los precios más competitivos del mercado y la mayor rapidez en la entrega.
-                                            Nos encargamos de la nacionalización de sus cargas en Cuba, gestionando todo el proceso legal y aduanal por usted.
-                                            Importación directa desde Estados Unidos, con un servicio seguro, eficiente y confiable.                                            </p>
-                                        </div>
+                                    <div className="col-lg-6">
+                                        <p
+                                        className="font-xl color-dark mb-20 wow animate__animated animate__fadeInUp"
+                                        data-wow-delay=".0s"
+                                        style={{ fontWeight: 700, textAlign: "justify" }}
+                                        >
+                                        Los precios más competitivos del mercado y la mayor rapidez en la entrega.
+                                        Nos encargamos de la nacionalización de sus cargas en Cuba, gestionando todo el proceso legal y aduanal por usted.
+                                        Importación directa desde Estados Unidos, con un servicio seguro, eficiente y confiable.
+                                        </p>
+                                    </div>
                                     </div>
                                     <div className="box-button mt-30"><Link className="btn btn-brand-1-big hover-up mr-40 wow animate__animated animate__fadeInUp" href="/tienda">Ver Catálogo</Link>
                                     {/*<a className="btn btn-play popup-youtube hover-up wow animate__animated animate__fadeInUp" onClick={() => setOpen(true)}><img className="wow animate__animated animate__fadeInUp" src="/assets/imgs/template/icons/play.svg" alt="" />Cómo funciona?</a>*/}

@@ -5,7 +5,7 @@ export default function Howitwork1() {
             <section className="section pt-85 bg-worldmap">
                 <div className="container">
                     <div className="text-center"><img className="mb-15" src="/assets/imgs/template/icons/joe-supply-embedded.svg" alt="Joe Supply" width="120" height="120" />
-                        <h2 className="color-brand-2 mb-20 wow animate__animated animate__fadeIn">Como Funciona ?</h2>
+                        <h2 className="color-brand-2 mb-20 wow animate__animated animate__fadeIn">Cómo Funciona ?</h2>
                         <p className="font-md color-grey-700 wow animate__animated animate__fadeIn">Usted Elige los Productos de su Preferencia
                             con más Salida en el Mercado Cubano, Nosotros le Ofrecemos los Mejores Precios y le Garantizamos la Seguridad, Calidad y Rapidéz de su Carga,
                             además de un Seguimiento en Tiempo Real de su Pedido.
@@ -19,7 +19,7 @@ export default function Howitwork1() {
                                     <div className="info-play">
                                         <h4 className="color-white mb-15 wow animate__animated animate__fadeIn">Contamos con la Experiencia y el Profesionalismo necesario para Garantizar 
                                             un Servicio Logístico Confiable.</h4>
-                                        <p className="font-sm color-white wow animate__animated animate__fadeIn">A lo largo de los años hemos trabajado con fábricas internacionales y principales importadoras cubanas.
+                                        <p className="font-sm color-white wow animate__animated animate__fadeIn" style={{ textAlign: "justify" }}>A lo largo de los años hemos trabajado con fábricas internacionales y principales importadoras cubanas.
                                         Ofrecemos envíos marítimos rápidos y seguros hacia Cuba, con seguimiento en tiempo real.
                                         Nuestro equipo altamente capacitado asegura eficiencia y transparencia en cada operación.
                                         Su carga siempre protegida, con los mejores precios y tiempos de entrega del mercado.

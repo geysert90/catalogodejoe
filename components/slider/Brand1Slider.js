@@ -52,19 +52,17 @@ export default function Brand1Slider() {
 
                 <SwiperSlide><img src="/assets/imgs/slider/logo/CMA_CGM_logo.png" alt="transp" />
                 </SwiperSlide>
-                <SwiperSlide><img src="/assets/imgs/slider/logo/Hapag-Lloyd.png" alt="transp" />
+                <SwiperSlide><img src="/assets/imgs/slider/logo/pilgrims_logo-1.png" alt="transp" />
+                </SwiperSlide>
+                <SwiperSlide><img src="/assets/imgs/slider/logo/tyson-logo.png" alt="transp" />
                 </SwiperSlide>
                 <SwiperSlide><img src="/assets/imgs/slider/logo/hor-logo.png" alt="transp" />
                 </SwiperSlide>
+                <SwiperSlide><img src="/assets/imgs/slider/logo/Seaboard-Marine-2.png" alt="transp" />
+                </SwiperSlide>
+                <SwiperSlide><img src="/assets/imgs/slider/logo/Hapag-Lloyd.png" alt="transp" />
+                </SwiperSlide>                
                 <SwiperSlide><img src="/assets/imgs/slider/logo/Logo_of_Crowley.png" alt="transp" />
-                </SwiperSlide>
-                <SwiperSlide><img src="/assets/imgs/slider/logo/pilgrims_logo-1.png" alt="transp" />
-                </SwiperSlide>
-                <SwiperSlide><img src="/assets/imgs/slider/logo/alea.png" alt="transp" />
-                </SwiperSlide>
-                <SwiperSlide><img src="/assets/imgs/slider/logo/creati.png" alt="transp" />
-                </SwiperSlide>
-                <SwiperSlide><img src="/assets/imgs/slider/logo/truck.png" alt="transp" />
                 </SwiperSlide>
             </Swiper>
         </>

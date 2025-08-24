@@ -23,7 +23,7 @@ export default function Info1() {
                             <div className="box-info-pround">
                                 <h3 className="color-brand-2 mb-15 wow animate__animated animate__fadeIn">Envíos de Cargas Marítimas Seguras con 
                                     Seguimiento en Tiempo Real</h3>
-                                <p className="font-md color-grey-500 wow animate__animated animate__fadeIn">A lo largo de los años, hemos creado un vínculo directo con fábricas estadounidenses e internacionales, 
+                                <p className="font-md color-grey-500 wow animate__animated animate__fadeIn" style={{ fontWeight: 700, textAlign: "justify" }} >A lo largo de los años, hemos creado un vínculo directo con fábricas estadounidenses e internacionales, 
                                     ampliando nuestra red de productos y garantizando los mejores precios junto con un ciclo de reaprovisionamiento ágil con los menores tiempos de entrega del mercado. 
                                     Realizamos envíos semanales con tiempos de llegada a Cuba entre 24 horas y 6 días, asegurando rapidez, eficiencia y puntualidad.</p>
                                 <div className="mt-30">
@@ -46,14 +46,14 @@ export default function Info1() {
                                         <li className="wow animate__animated animate__fadeIn">
                                             <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                            </svg>Seguridad y Confianza en cada Envío
+                                            </svg>Tenemos Oficinas en Santa Clara, Cuba para su Confianza
                                         </li>
                                         <li className="wow animate__animated animate__fadeIn">
-                                            <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                            <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" >
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7"/>
                                             </svg>Contratos con las Principales Importadoras Cubanas: Agrimpex, Quimimport, Frutas Selectas, etc.
                                         </li>
-                                        <li className="wow animate__animated animate__fadeIn">
+                                        <li className="wow animate__animated animate__fadeIn" style={{ textAlign: "justify" }}>
                                             <svg className="w-6 h-6 icon-16" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                             </svg>Ofrecemos el Proceso de Nacionalización de sus Cargas, y Pagamos sus Impuestos.

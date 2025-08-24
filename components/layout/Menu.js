@@ -8,13 +8,13 @@ export default function Menu() {
         <>
 
             <ul className="main-menu">
-                <li className="/home"><Link className="active" href="/">Catalogo</Link></li>
+                <li className="/home"><Link className="active" href="/">Catálogo</Link></li>
                 
                 {/* <li><Link href="/about">Acerca de</Link></li> */}
                 
-                <li className="/seguirpedido"><Link href="/seguirpedido">Pedidos</Link></li>
-                <li><Link href="/contact">Contactanos</Link></li>
-                <li className="/tienda"><Link className="active" href="/acercade">Acerca de</Link></li>
+                <li className="/seguirpedido"><Link href="/seguirpedido">Rastreo</Link></li>
+                <li><Link href="/contact">Contáctanos</Link></li>
+                <li className="/tienda"><Link className="active" href="/acercade">Quiénes Somos</Link></li>
             </ul>
         </>
     )

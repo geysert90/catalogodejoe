@@ -26,10 +26,12 @@ export default function Info2() {
                              
                                 </div>
                             </div>
-                            <div className="mt-20"><Link className="btn btn-brand-2 mr-20 wow animate__animated animate__fadeIn" href="/contact">Contactanos</Link><Link className="btn btn-link-medium wow animate__animated animate__fadeIn" href="/contact">Ver Más
+                            <div className="mt-20"><Link className="btn btn-brand-2 mr-20 wow animate__animated animate__fadeIn" href="/contact">Contáctanos</Link>
+                            {/*<Link className="btn btn-link-medium wow animate__animated animate__fadeIn" href="/contact">Ver Más
                                 <svg className="w-6 h-6 icon-16 ml-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                                </svg></Link></div>
+                                </svg></Link>*/}
+                                </div>
                         </div>
                     </div>
                 </div>

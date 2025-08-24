@@ -10,7 +10,7 @@ export default function Footer1({ }) {
             <div className="row">
               {/* Columna izquierda: logo + descripción */}
               <div className="col-lg-3 width-23 mb-30">
-                <div className="mb-20">
+                <div className="mb-5">
                   <img
                     src="/assets/imgs/template/logo-joesupply-preview.png"
                     alt="Joe Supply"
@@ -19,7 +19,7 @@ export default function Footer1({ }) {
                   />
                 </div>
 
-                <p className="font-md mb-20 color-white">
+                <p className="font-md mb-20  color-white" style={{ textAlign: "justify" }}>
                   Somos una Empresa Americana Especializada en Importación hacia Cuba.
                   Con los Precios más Competitivos del Mercado y la Mayor Rapidéz en la Entrega.
                 </p>
@@ -39,20 +39,20 @@ export default function Footer1({ }) {
                   {/* Modalidad 1 */}
                   <div className="col-md-6 mb-20">
                     <h6 className="mb-10 color-white">
-                      🔹 1. Oferta con nacionalización incluida por Joe Supply LLC
+                      🔹 1. Oferta con Nacionalización Incluida por Joe Supply LLC
                     </h6>
-                    <p className="color-white mb-10">
+                    <p className="color-white mb-10" style={{ textAlign: "justify" }}>
                       Nos encargamos del servicio de nacionalización, por lo que el cliente
                       no necesita contrato con la importadora.
                     </p>
-                    <p className="color-white mb-10">
+                    <p className="color-white mb-10" style={{ textAlign: "justify" }}>
                       Asumimos los costos de aranceles de importación e impuestos ante la ONAT.
                     </p>
-                    <p className="color-white mb-10">
+                    <p className="color-white mb-10" style={{ textAlign: "justify" }}>
                       El proceso de nacionalización demora entre 5 y 7 días laborables después
                       de la llegada del contenedor a Puerto Mariel o Santiago de Cuba.
                     </p>
-                    <p className="color-white mb-0">
+                    <p className="color-white mb-0" style={{ textAlign: "justify" }}>
                       Una vez concluido, entregamos la pre-cita (derecho de recogida) para la
                       extracción en el puerto.
                     </p>
@@ -61,16 +61,16 @@ export default function Footer1({ }) {
                   {/* Modalidad 2 */}
                   <div className="col-md-6 mb-20">
                     <h6 className="mb-10 color-white">
-                      🔹 2. Oferta con nacionalización por parte del cliente
+                      🔹 2. Oferta con Nacionalización por parte del Cliente
                     </h6>
-                    <p className="color-white mb-10">
+                    <p className="color-white mb-10" style={{ textAlign: "justify" }}>
                       El cliente nacionaliza la mercancía a través de importadoras como
                       Quimimport, Agrimpex, Frutas Selectas, entre otras.
                     </p>
-                    <p className="color-white mb-10">
+                    <p className="color-white mb-10" style={{ textAlign: "justify" }}>
                       Para ello debe estar registrado como cliente en dichas entidades.
                     </p>
-                    <p className="color-white mb-0">
+                    <p className="color-white mb-0" style={{ textAlign: "justify" }}>
                       Si es MIPME, TCP o Cooperativa y aún no está registrado, le apoyamos
                       en el proceso siempre que cuente con la documentación en regla.
                     </p>
