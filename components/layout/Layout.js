@@ -58,7 +58,7 @@ export default function Layout({ headerStyle, footerStyle, headTitle, children, 
             {footerStyle == 1 && <Footer />}
             {footerStyle == "newsletter" && <FooterNewsletter />}
 
-            <BackToTop />
+            {/*<BackToTop /> */}
         </>
     )
 }
