@@ -303,7 +303,7 @@ function ProductCard({ p }) {
             src={imgSrc}
             alt={titulo}
             style={{
-              maxWidth: "90%",
+              maxWidth: "100%",
               maxHeight: "80%",
               borderRadius: 8,
               boxShadow: "0 8px 24px rgba(0,0,0,0.5)",
