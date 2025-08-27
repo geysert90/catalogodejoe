@@ -8280,3 +8280,86 @@ html {
     pointer-events: none;
   }
 }
+
+/* Contenedor genérico del slide */
+.banner-hero {
+  /* que el fondo cubra y no se deforme */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  /* altura flexible según pantalla */
+  min-height: clamp(420px, 70vh, 900px);
+
+  /* alinear contenido (CTA) al fondo sin taparlo */
+  display: flex;
+  align-items: flex-end;
+  padding: 32px 0; /* respiración inferior */
+}
+
+/* Wrapper para centrar el contenido del banner */
+.banner-inner {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start; /* o center/right si prefieres */
+}
+
+/* Móvil: muestra más parte inferior del banner (donde suelen estar las letras) */
+/* Quita el negro de Swiper en general */
+/*.swiper,
+.swiper-wrapper,
+.swiper-slide {
+  background: transparent !important;
+}
+
+/* Fondo del slide / banner 
+.banner-1 {
+  background-color: #f4f6f9; /* o #ffffff, o el color del banner 
+}
+
+/* Mobile: imagen “alejada” y sin recorte 
+@media (max-width: 575.98px) {
+  .banner-1 {
+    min-height: 280px;           /* ajusta a tu gusto (240–320px) 
+    background-size: contain;    /* muestra la imagen completa 
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+
+
+
+
+/* Tablets 
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .banner-hero {
+    min-height: 62vh;
+    padding: 24px 0;
+  }
+} */
+
+/* Pantallas ultra anchas (2K/4K) */
+@media (min-width: 1600px) {
+  .banner-hero {
+    min-height: 68vh;  /* evita que se vea “bajito” en 4K */
+    background-position: center center;
+  }
+}
+
+/* --- Ajustes por slide (opcional) ---
+   Si una imagen concreta corta el sujeto, afina su foco.
+   Los nth-of-type apuntan al N° de slide dentro del Swiper.
+*/
+.hero-swiper .swiper-slide:nth-of-type(1) .banner-hero {
+  /* ejemplo: sube el foco para mostrar más zona superior */
+  background-position: center 30%;
+}
+.hero-swiper .swiper-slide:nth-of-type(2) .banner-hero {
+  background-position: right center; /* sujeto a la derecha */
+}
+.hero-swiper .swiper-slide:nth-of-type(3) .banner-hero {
+  background-position: center 40%;
+}
+/* Ajusta por imagen los porcentajes que necesites */
+

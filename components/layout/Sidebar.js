@@ -71,7 +71,7 @@ export default function Sidebar({ openClass, handleMobileMenuClose }) {
                                        
                                         {/* Enlaces simples */}
                                         <li><Link href="/">Catálogo</Link></li>
-                                        <li><Link href="/seguirpedidos">Pedidos</Link></li>
+                                        <li><Link href="/seguirpedido">Rastreo</Link></li>
                                         <li><Link href="/contact">Contáctanos</Link></li>
                                         <li><Link href="/acercade">Acerca de</Link></li>
                                     </ul>

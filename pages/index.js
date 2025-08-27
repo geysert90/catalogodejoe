@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 
+
 // -------- Helpers --------
 function productImageSrc(p) {
   const base =
@@ -329,6 +330,7 @@ export default function TiendaPage({
 }) {
   const totalPages = Math.max(1, Math.ceil((total || 0) / pageSize));
 
+  
   return (
     <Layout>
       <section className="section pt-60 pb-60">
@@ -663,3 +665,4 @@ export async function getServerSideProps(ctx) {
     };
   }
 }
+

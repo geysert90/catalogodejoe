@@ -9,7 +9,7 @@ export default function Info1() {
                         <p className="font-2xl-bold color-brand-2 wow animate__animated animate__fadeIn"><span className="color-brand-1">Envíos de Contenedores 
                             a MiPyme, TCP, Cooperativas y Personas Naturales  </span></p>
                         <h2 className="color-brand-2 mb-65 mt-15 wow animate__animated animate__fadeIn">Ofrecemos los mejores Precios de Importación
-                            a Cuba<br className="d-none d-lg-block" />y los menores Tiempos de Envíos.</h2>
+                            a Cuba<br className="d-none d-lg-block" /> y los menores Tiempos de Envíos.</h2>
                     </div>
                     <div className="row mt-50 align-items-center">
                         <div className="col-xl-7 col-lg-6 mb-30">

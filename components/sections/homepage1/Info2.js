@@ -8,7 +8,7 @@ export default function Info2() {
                     <div className="row">
                         <div className="col-lg-6"><span className="btn btn-tag wow animate__animated animate__fadeIn">Joe Supply LLC</span>
                           
-                            <h3 className="color-grey-900 mb-20 mt-15 wow animate__animated animate__fadeIn">Orgullosos de Ofrecer<br className="d-none d-lg-block" />Excelencia en Todo Momento</h3>
+                            <h3 className="color-grey-900 mb-20 mt-15 wow animate__animated animate__fadeIn">Orgullosos de Ofrecer<br className="d-none d-lg-block" /> Excelencia en Todo Momento</h3>
                             <p className="font-md color-grey-900 mb-40 wow animate__animated animate__fadeIn">Garantizamos la seguridad y calidad de su carga y ofrecemos
                                 los mejores precios del mercado. Nuestra experiencia y compromiso nos permiten brindar un servicio excepcional a nuestros clientes.</p>
                            
