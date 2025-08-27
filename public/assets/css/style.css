@@ -8227,3 +8227,56 @@ html {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+/* Auto-hide header/topbar SOLO en móvil */
+@media (max-width: 991.98px) {
+  .box-bar,
+  .header.sticky-bar {
+    position: sticky;
+    top: 0;
+    z-index: 1040; /* por encima del contenido */
+    transition: transform 0.25s ease;
+    will-change: transform;
+  }
+
+  /* Cuando se agrega la clase hide-mobile, se ocultan deslizándose hacia arriba */
+  .box-bar.hide-mobile,
+  .header.sticky-bar.hide-mobile {
+    transform: translateY(-110%);
+  }
+}
+
+/* === Sidebar SIEMPRE por encima del header en móvil === */
+@media (max-width: 991.98px) {
+  /* Asegura que el contenedor del sidebar cubra toda la pantalla y esté arriba */
+  .mobile-header-active.mobile-header-wrapper-style {
+    position: fixed;
+    inset: 0;             /* top:0; right:0; bottom:0; left:0 */
+    z-index: 2000;        /* más alto que el header (1040) */
+  }
+
+  /* Botón de cierre del sidebar aún más arriba para ser clicable seguro */
+  .mobile-header-active .burger-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2100;
+  }
+
+  /* Mantén el header por debajo del overlay del menú móvil */
+  .header.sticky-bar,
+  .box-bar {
+    z-index: 1040; /* está bien, siempre que el sidebar sea mayor (2000) */
+  }
+}
+
+/* === (Opcional pero recomendado) Si tu app añade una clase al body cuando el menú está abierto === */
+/* Cambia `mobile-menu-open` por la clase real que uses al abrir el menú */
+@media (max-width: 991.98px) {
+  body.mobile-menu-open .header.sticky-bar,
+  body.mobile-menu-open .box-bar {
+    /* Evita que “tapen” clics por encima del overlay */
+    pointer-events: none;
+  }
+}
