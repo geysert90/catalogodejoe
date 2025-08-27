@@ -70,11 +70,11 @@ export default async function handler(req, res) {
     res.status(200).json({
       tracking_code: item.tracking_code,
       estado: item.estado,
-      pedido_id: item?.pedido_id?.id ?? null,
-      cliente: {
-        nombre: item?.pedido_id?.usuario_id?.nombre ?? "",
-        telefono: item?.pedido_id?.usuario_id?.telefono ?? "",
-      },
+      //pedido_id: item?.pedido_id?.id ?? null,
+     // cliente: {
+     //   nombre: item?.pedido_id?.usuario_id?.nombre ?? "",
+     //   telefono: item?.pedido_id?.usuario_id?.telefono ?? "",
+      //},
       origen: ORIGEN,
       destino: DESTINO,
       coords: { lat, lng },

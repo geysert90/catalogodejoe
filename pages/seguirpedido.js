@@ -200,45 +200,65 @@ export default function TrackParcel() {
               </div>
 
               {/* Resultado */}
-              {result && (
+{result && (
   <div className="mt-4 wow animate__animated animate__fadeInUp">
-    <div className="rounded-3 p-3 bg-white shadow-sm">
-      <div className="d-flex align-items-center gap-2 mb-2">
-        <span style={{ fontSize: 24 }}>📦</span>
-        <h5 className="m-0">Tracking <strong>{result.tracking_code}</strong></h5>
-      </div>
+    <div className="card border-0 shadow-sm rounded-3">
+      <div className="card-body p-3 p-sm-4">
+        {/* Encabezado */}
+        <div className="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">
+          <div className="d-flex align-items-center gap-2">
+            <span
+              className="d-inline-flex align-items-center justify-content-center"
+              style={{
+                width: 38,
+                height: 38,
+                borderRadius: 10,
+                background: "#f1f5ff",
+                fontSize: 20,
+              }}
+            >
+              📦
+            </span>
+            <h5 className="m-0">
+              Tracking <strong className="text-primary">{result.tracking_code}</strong>
+            </h5>
+          </div>
 
-      <div className="text-muted mb-2">
-        Pedido: <strong>#{result.pedido_id ?? "—"}</strong> · Cliente:{" "}
-        <strong>{result.cliente?.nombre || "—"}</strong>
-      </div>
+          <span className="badge rounded-pill bg-info text-dark px-3 py-2">
+            Estado: {result.estado || "—"}
+          </span>
+        </div>
 
-      <div className="mb-2">
-        <span className="badge bg-info text-dark">
-          Estado: {result.estado || "—"}
-        </span>
-      </div>
+        {/* Origen / Destino */}
+        <div className="d-flex flex-wrap gap-2 mb-3">
+          <span className="badge bg-light text-dark border rounded-pill px-3 py-2">
+            🟢 <span className="text-uppercase small text-muted">Origen:</span>
+            <strong className="ms-1">
+              {result.origen_nombre || result?.origen?.nombre || "Puerto de salida"}
+            </strong>
+          </span>
+          <span className="badge bg-light text-dark border rounded-pill px-3 py-2">
+            🔴 <span className="text-uppercase small text-muted">Destino:</span>
+            <strong className="ms-1">
+              {result.destino_nombre || result?.destino?.nombre || "Puerto del Mariel, Cuba"}
+            </strong>
+          </span>
+        </div>
 
-      {/* Etiquetas Origen/Destino (opcional) */}
-      <div className="d-flex flex-wrap gap-2 mb-2">
-        <span className="badge bg-light text-dark border">
-          🟢 Origen: <strong className="ms-1">{result.origen_nombre || result?.origen?.nombre || "Puerto de salida"}</strong>
-        </span>
-        <span className="badge bg-light text-dark border">
-          🔴 Destino: <strong className="ms-1">{result.destino_nombre || result?.destino?.nombre || "Puerto del Mariel, Cuba"}</strong>
-        </span>
+        {/* Mapa con puerto dinámico */}
+        <div className="rounded-3 overflow-hidden border">
+          <MapaReal
+            estado={result.estado}
+            coords={result.coords}
+            origen={result.origen}
+            destino={result.destino}
+          />
+        </div>
       </div>
-
-      {/* Mapa con puerto dinámico */}
-      <MapaReal
-        estado={result.estado}
-        coords={result.coords}
-        origen={result.origen}
-        destino={result.destino}
-      />
     </div>
   </div>
 )}
+
 
 
               {/*<div className="mt-40 d-flex justify-content-center">

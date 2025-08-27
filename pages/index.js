@@ -81,7 +81,7 @@ function ProductCard({ p }) {
   const ofertaEspecial = Boolean(p?.oferta_especial);
 
   const phone = toWhatsNumber("+17864939342");
-  const texto = `Hola, estoy interesado en el producto ${titulo}. Me interesa ${qty} contenedor, ¿me puedes dar detalles por favor?`;
+  const texto = `Hola, estoy interesado en el producto ${titulo}, ¿me puedes dar detalles por favor?`;
   const waLink = `https://wa.me/${phone}?text=${encodeURIComponent(texto)}`;
 
   return (
