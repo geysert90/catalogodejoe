@@ -329,15 +329,14 @@ export default function TiendaPage({
   nat,
 }) {
   const totalPages = Math.max(1, Math.ceil((total || 0) / pageSize));
+  const [catsOpen, setCatsOpen] = useState(false);
 
-  
   return (
     <Layout>
       <section className="section pt-60 pb-60">
         <div className="container">
           <div className="row">
-            {/* Sidebar */}
-            {/* Sidebar: visible solo en desktop */}
+            {/* Sidebar desktop */}
             <aside className="col-lg-3 mb-40 d-none d-lg-block">
               <div className="p-3 rounded-3 bg-white shadow-sm">
                 <h5 className="mb-3">Categorías</h5>
@@ -364,9 +363,59 @@ export default function TiendaPage({
               </div>
             </aside>
 
-
-            {/* Listado */}
+            {/* Contenido / Listado */}
             <div className="col-lg-9">
+              {/* BOTÓN CATEGORÍAS + PANEL (solo móvil) */}
+              <div className="d-lg-none mb-3">
+                <button
+                  type="button"
+                  className="btn w-100 btn-outline-secondary d-flex justify-content-between align-items-center"
+                  onClick={() => setCatsOpen((v) => !v)}
+                  aria-expanded={catsOpen ? "true" : "false"}
+                  aria-controls="mobile-cats-panel"
+                >
+                  <span>Categorías</span>
+                  <span
+                    aria-hidden="true"
+                    style={{ transition: "transform .2s ease", transform: catsOpen ? "rotate(180deg)" : "rotate(0deg)" }}
+                  >
+                    ▾
+                  </span>
+                </button>
+
+                <div
+                  id="mobile-cats-panel"
+                  className={`mobile-cat-panel mt-2 ${catsOpen ? "open" : ""}`}
+                  role="region"
+                  aria-label="Lista de categorías"
+                >
+                  <div className="p-3 rounded-3 bg-white shadow-sm">
+                    <ul className="list-unstyled m-0">
+                      <li className="mb-2">
+                        <Link
+                          href={{ pathname: "/tienda", query: { ...(search ? { q: search } : {}), nat: nat ?? "1" } }}
+                          className={!selectedCategory ? "fw-bold" : ""}
+                          onClick={() => setCatsOpen(false)}
+                        >
+                          Todas
+                        </Link>
+                      </li>
+                      {categories.map((cat) => (
+                        <li key={cat.id} className="mb-2">
+                          <Link
+                            href={{ pathname: "/tienda", query: { cat: cat.id, ...(search ? { q: search } : {}), nat: nat ?? "1" } }}
+                            className={Number(selectedCategory) === Number(cat.id) ? "fw-bold" : ""}
+                            onClick={() => setCatsOpen(false)}
+                          >
+                            {cat.nombre}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
               {/* Acciones */}
               <div className="d-flex flex-column gap-2 gap-md-3 mb-3">
                 <div className="d-grid gap-2" style={{ gridTemplateColumns: "1fr" }}>
@@ -417,29 +466,28 @@ export default function TiendaPage({
                     </Link>
                   </div>
 
-                {/* Buscador */}
-                <form
-                  className="d-none d-md-flex flex-row w-100 gap-2"
-                  method="GET"
-                  action="/tienda"
-                >
-                  {selectedCategory && (
-                    <input type="hidden" name="cat" value={selectedCategory} />
-                  )}
-                  {typeof nat !== "undefined" && (
-                    <input type="hidden" name="nat" value={nat} />
-                  )}
-                  <input
-                    name="q"
-                    defaultValue={search || ""}
-                    className="form-control"
-                    placeholder="Buscar producto..."
-                  />
-                  <button className="btn btn-brand-1" type="submit">
-                    Buscar
-                  </button>
-                </form>
-
+                  {/* Buscador (solo >= md) */}
+                  <form
+                    className="d-none d-md-flex flex-row w-100 gap-2"
+                    method="GET"
+                    action="/tienda"
+                  >
+                    {selectedCategory && (
+                      <input type="hidden" name="cat" value={selectedCategory} />
+                    )}
+                    {typeof nat !== "undefined" && (
+                      <input type="hidden" name="nat" value={nat} />
+                    )}
+                    <input
+                      name="q"
+                      defaultValue={search || ""}
+                      className="form-control"
+                      placeholder="Buscar producto..."
+                    />
+                    <button className="btn btn-brand-1" type="submit">
+                      Buscar
+                    </button>
+                  </form>
                 </div>
               </div>
 
@@ -467,7 +515,7 @@ export default function TiendaPage({
                 </span>
               </div>
 
-              {/* Grid de productos: gaps más chicos en móvil */}
+              {/* Grid de productos */}
               <div className="row g-2 g-sm-3">
                 {products.length === 0 && (
                   <div className="col-12">
@@ -548,9 +596,22 @@ export default function TiendaPage({
           </div>
         </div>
       </section>
+
+      {/* CSS del panel móvil */}
+      <style jsx>{`
+        .mobile-cat-panel {
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height .25s ease;
+        }
+        .mobile-cat-panel.open {
+          max-height: 420px; /* Ajusta si tienes muchas categorías */
+        }
+      `}</style>
     </Layout>
   );
 }
+
 
 // -------- SSR: categorías + productos desde Directus --------
 export async function getServerSideProps(ctx) {
