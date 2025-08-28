@@ -1,6 +1,6 @@
 {
   "name": "Catalogo de Joe",
-  "short_name": "Venta Mayorista",
+  "short_name": "Joe Supply",
   "description": "Catálogo y pedidos vía WhatsApp",
   "start_url": "/",
   "scope": "/",
