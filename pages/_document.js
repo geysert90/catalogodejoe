@@ -1,3 +1,4 @@
+// pages/_document.js
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
@@ -5,6 +6,9 @@ class MyDocument extends Document {
     return (
       <Html lang="es">
         <Head>
+          {/* Viewport: imprescindible para que <source media="..."> funcione en móvil */}
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+
           {/* Tus fuentes */}
           <link rel="preconnect" href="https://fonts.bunny.net" />
           <link
@@ -18,10 +22,7 @@ class MyDocument extends Document {
 
           {/* iOS support */}
           <meta name="apple-mobile-web-app-capable" content="yes" />
-          <meta
-            name="apple-mobile-web-app-status-bar-style"
-            content="default"
-          />
+          <meta name="apple-mobile-web-app-status-bar-style" content="default" />
           <meta name="apple-mobile-web-app-title" content="JoeSupply" />
           <link rel="apple-touch-icon" href="/assets/imgs/template/logo-joesupply-preview.png" />
 
