@@ -545,20 +545,53 @@ export default function TiendaPage({
                 </span>
               </div>
 
-              {/* Grid de productos */}
-              <div className="row g-2 g-sm-3">
-                {products.length === 0 && (
-                  <div className="col-12">
-                    <div className="alert alert-info">
-                      No hay productos para mostrar.
-                    </div>
-                  </div>
-                )}
+            {/* Grid de productos */}
+<div className="row g-2 g-sm-3">
+  {products.length === 0 && (
+    <div className="col-12">
+      <div className="alert alert-info">No hay productos para mostrar.</div>
+    </div>
+  )}
 
-                {products.map((p) => (
-                  <ProductCard key={p.id} p={p} />
-                ))}
-              </div>
+  {(() => {
+    // Particionar manteniendo el orden relativo como viene del servidor
+    const specials = [];
+    const normals = [];
+    for (const p of products) {
+      (p?.oferta_especial ? specials : normals).push(p);
+    }
+
+    // En móvil (col-6), si specials es impar, insertamos un hueco para que
+    // el resto empiece en una nueva fila y conserve su orden original.
+    const needMobileSpacer = specials.length % 2 === 1;
+
+    return (
+      <>
+        {/* Primero, todas las ofertas especiales */}
+        {specials.map((p) => (
+          <ProductCard key={`s-${p.id}`} p={p} />
+        ))}
+
+        {/* Hueco SOLO en móvil si hay número impar de ofertas */}
+        {needMobileSpacer && (
+          <div
+            key="specials-spacer"
+            className="col-6 d-md-none"
+            aria-hidden="true"
+            // opcional: una línea mínima para visualizar el hueco en depuración
+            style={{ minHeight: 1 }}
+          />
+        )}
+
+        {/* Luego, el resto en el mismo orden que venía */}
+        {normals.map((p) => (
+          <ProductCard key={`n-${p.id}`} p={p} />
+        ))}
+      </>
+    );
+  })()}
+</div>
+
 
               {/* Paginación */}
               {totalPages > 1 && (
