@@ -67,6 +67,36 @@ function formatDate(d) {
   return null;
 }
 
+// --- NUEVO: helper para precio flexible (número o texto como "20 por saco")
+function formatPrecioFlexible(precio) {
+  if (precio === null || precio === undefined || precio === "") return null;
+
+  const formatUSD = (n) =>
+    new Intl.NumberFormat("es-ES", { style: "currency", currency: "USD" }).format(n);
+
+  if (typeof precio === "number" && Number.isFinite(precio)) {
+    return formatUSD(precio);
+  }
+
+  if (typeof precio === "string") {
+    const s = precio.trim();
+
+    // ¿parece numérico? (permite 20, 20.5, 20,5, con o sin espacios)
+    const only = s.replace(/\s/g, "");
+    const numericLike = /^[\d]+([.,]\d+)?$/.test(only);
+    if (numericLike) {
+      const num = Number(only.replace(",", "."));
+      if (!Number.isNaN(num)) return formatUSD(num);
+    }
+
+    // Trae texto (por ejemplo "20 por saco") -> mostrar tal cual
+    return s;
+  }
+
+  // fallback para otros tipos
+  return String(precio);
+}
+
 // -------- Tarjeta de producto --------
 function ProductCard({ p }) {
   const [qty] = useState(1);
@@ -151,19 +181,19 @@ function ProductCard({ p }) {
               {titulo}
             </h6>
 
-            {/* Precio compacto */}
-            {precio !== null ? (
-              <div className="mb-2">
-                <span className="badge bg-success" style={{ fontSize: 11 }}>
-                  {new Intl.NumberFormat("es-ES", {
-                    style: "currency",
-                    currency: "USD",
-                  }).format(Number(precio))}
-                </span>
-              </div>
-            ) : (
-              <div className="mb-2 text-muted small">—</div>
-            )}
+            {/* Precio compacto (USANDO EL HELPER NUEVO) */}
+            {(() => {
+              const precioFmt = formatPrecioFlexible(precio);
+              return precioFmt ? (
+                <div className="mb-2">
+                  <span className="badge bg-success" style={{ fontSize: 11 }}>
+                    {precioFmt}
+                  </span>
+                </div>
+              ) : (
+                <div className="mb-2 text-muted small">—</div>
+              );
+            })()}
 
             {/* Descripción: 3 líneas máx. */}
             <p
@@ -726,4 +756,3 @@ export async function getServerSideProps(ctx) {
     };
   }
 }
-
