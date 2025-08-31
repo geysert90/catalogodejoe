@@ -183,7 +183,7 @@ export default function Hero1Slider({ banners = [] }) {
         }
         @media (max-width: 767.98px) {
           .hero-slide {
-            min-height: 52vh;
+            min-height: 56vh;
           }
         }
 
@@ -191,7 +191,7 @@ export default function Hero1Slider({ banners = [] }) {
           position: absolute;
           inset: 0;
           width: 100%;
-          height: 100%;
+          height: 100%5
           object-fit: cover;
           object-position: center center;
           display: block;
