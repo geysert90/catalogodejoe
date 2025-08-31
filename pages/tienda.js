@@ -236,7 +236,7 @@ function ProductCard({ p }) {
                         En Mariel
                       </div>
                       <div className="small" style={{ opacity: 0.95, fontSize: 11 }}>
-                        En el Puerto / Lista Pre-Cita
+                        En el Puerto
                       </div>
                     </div>
                   </div>
