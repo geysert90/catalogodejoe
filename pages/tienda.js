@@ -139,9 +139,9 @@ function ProductCard({ p }) {
                 style={{
                   position: "absolute",
                   top: 10,
-                  left: 10,
+                  left: 100,
                   zIndex: 2,
-                  padding: "4px 8px",
+                  padding: "2px 6px",
                   borderRadius: "9999px",
                   fontSize: 10,
                   fontWeight: 700,
@@ -156,7 +156,7 @@ function ProductCard({ p }) {
                 aria-label="Oferta especial"
                 title="Oferta especial"
               >
-                ⭐ Oferta especial
+                ⭐ Oferta
               </div>
             )}
             <img
@@ -730,7 +730,9 @@ export async function getServerSideProps(ctx) {
   prodUrl.searchParams.set("limit", String(pageSize));
   prodUrl.searchParams.set("offset", String((page - 1) * pageSize));
   prodUrl.searchParams.set("meta", "filter_count");
-  prodUrl.searchParams.set("sort", "-id");
+  [/*prodUrl.searchParams.set("sort", "-id");*/]
+  prodUrl.searchParams.append("sort[]", "-oferta_especial");
+prodUrl.searchParams.append("sort[]", "nombre"); 
 
   prodUrl.searchParams.set("filter[Disponible][_eq]", "true");
 
