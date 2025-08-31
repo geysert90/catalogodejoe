@@ -40,32 +40,28 @@ function toWhatsNumber(n) {
   return String(n || "").replace(/\D+/g, "");
 }
 
-function formatDate(d) {
+const MONTHS_ES_SHORT = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+
+function formatDateShort(d) {
   if (!d) return null;
 
+  // Normaliza y parsea
+  let dt = null;
   if (d instanceof Date && !Number.isNaN(d.valueOf())) {
-    return new Intl.DateTimeFormat("es-ES", {
-      day: "2-digit",
-      month: "2-digit",
-      year: "numeric",
-    }).format(d);
-  }
-
-  if (typeof d === "string") {
+    dt = d;
+  } else if (typeof d === "string") {
     const s = /^\d{4}-\d{2}-\d{2}$/.test(d) ? `${d}T00:00:00Z` : d;
     const ts = Date.parse(s);
-    if (!Number.isNaN(ts)) {
-      return new Intl.DateTimeFormat("es-ES", {
-        day: "2-digit",
-        month: "2-digit",
-        year: "numeric",
-      }).format(new Date(ts));
-    }
-    return d;
+    if (!Number.isNaN(ts)) dt = new Date(ts);
   }
 
-  return null;
+  if (!dt) return null;
+
+  const day = String(dt.getUTCDate()).padStart(2, "0");
+  const month = MONTHS_ES_SHORT[dt.getUTCMonth()]; // 0..11
+  return `${day} de ${month}`; // ej: "09/sep"
 }
+
 
 // --- NUEVO: helper para precio flexible (número o texto como "20 por saco")
 function formatPrecioFlexible(precio) {
@@ -106,8 +102,9 @@ function ProductCard({ p }) {
   const precio = p?.precio ?? null;
   const imgSrc = productImageSrc(p);
 
-  const salida = formatDate(p?.fecha_salida);
-  const llegada = formatDate(p?.fecha_llegada);
+const salida = formatDateShort(p?.fecha_salida);
+const llegada = formatDateShort(p?.fecha_llegada);
+
   const enMariel = Boolean(p?.en_mariel);
   const ofertaEspecial = Boolean(p?.oferta_especial);
 
